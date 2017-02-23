@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root "demo#index"
 
   # All REST controller routes
-  resource :subjects do
+  resources :subjects do
     member do
       get :delete
     end
